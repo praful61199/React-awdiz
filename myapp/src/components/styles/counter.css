@@ -1,0 +1,8 @@
+button{
+    background-color: aqua;
+}
+.parent{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
