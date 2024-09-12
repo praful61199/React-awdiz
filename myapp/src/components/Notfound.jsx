@@ -1,8 +1,31 @@
-function Notfound(){
-    return <h1>Page not found</h1>
+import { useContext } from "react";
+import { DarkModeContext } from "./05-09/DarkModeContext"
+function Login() {
+  const { state, dispatch } = useContext(DarkModeContext);
+  const ChangeTheme = () => {
+    if (state.mode == "light") {
+      dispatch({ type: "DARKMODE" });
+    } else {
+      dispatch({ type: "LIGHTMODE" });
+    }
+  };
+  return (
+    <>
+      <p>Current colour  - {state.mode}</p>
+      <h1
+        style={{
+          backgroundColor: state.mode == "light" ? "white" : "Red",
+          color: state.mode == "light" ? "black" : "white",
+        }}
+      >
+        Login
+      </h1>
+      <button onClick={ChangeTheme}>Change colour</button>
+    </>
+  );
 }
-export default Notfound;
 
+export default Login;
 
 
 

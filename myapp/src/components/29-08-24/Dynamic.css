@@ -1,0 +1,23 @@
+.active {
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+    padding: 10px 40px;
+    /* border-radius: 2px solid black; */
+  }
+  
+  .not-active {
+    background-color: #e1ff00;
+    color: rgb(27, 14, 14);
+    font-size: 24px;
+    padding: 10px 40px;
+  }
+ .main{
+    display: flex;
+    margin-left: 600px;
+    margin-top: 200px;
+ }
+ .main p {
+    font-size: 25px
+ }
+ 
