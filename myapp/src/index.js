@@ -7,11 +7,13 @@ import{BrowserRouter} from 'react-router-dom'
 import{Toaster} from 'react-hot-toast'
 import ParentAuth from './components/context/AuthContext';
 import ParentComponetForDarkModeContext from './components/05-09/DarkModeContext';
-
+import {Provider} from 'react-redux'
+import store from './components/redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store = {store}> 
     <BrowserRouter>
     <Toaster
   position="top-center"
@@ -47,6 +49,7 @@ root.render(
    
     
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 

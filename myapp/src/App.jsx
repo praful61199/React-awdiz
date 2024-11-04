@@ -23,6 +23,12 @@ import UseMemo from './components/05-09/UseMemo';
 // import Cart from './components/cart';
 import AnotherComponent from './components/10-09/AnotherComponent';
 import Memo from './components/10-09/Memo';
+import Prac from './components/Practice/Prac';
+import Prac2 from './components/Practice/Prac2';
+import Prac3 from './components/Practice/Prac3';
+import PracticeTodo from './components/Practice/PracticeTodo';
+import Reduxcounter from './components/19-09/Reduxcounter';
+// import prac4 from './components/Practice/prac4';
 
 
 
@@ -45,16 +51,24 @@ function App() {
   <Route path="/use-context" element={<UseContext />} />
   <Route path="/darkmode" element={<DarkModeContext />} />
   <Route path="/usememo" element={<UseMemo/>} />
+  <Route path="/practice" element={<Prac/>} />
+  <Route path="/practice2" element={<Prac2/>} />
+  <Route path="/practice3" element={<Prac3/>} />
+  {/* <Route path="/practice4" element={<prac4/>} /> */}
+  <Route path="/practice4" element={<PracticeTodo/>} />
+  <Route path="/reduxcounter" element={<Reduxcounter/>} />
+  
+  
 
 
 
 
   <Route path ="*" element={<Notfound/>}/>
   <Route path="/counter" element={<Counter/>} />
-  {/* <Route path="/useeffect-1" element={<UseEffect1 />} />
+  <Route path="/useeffect-1" element={<UseEffect1 />} />
   <Route path="/useeffect-2" element={<UseEffect2/>}/>
   <Route path="/useeffect-3" element={<UseEffect3/>} />
-  <Route path="/useeffect-4" element={<UseEffect4/>} /> */}
+  <Route path="/useeffect-4" element={<UseEffect4/>} />
   <Route path="/todo" element={<Todo/>} />
   <Route path="/dynamic-styling" element={<Dynamicstyling/>}/>
   {/* <Route path="/cart" element={<Cart/>}/> */}
